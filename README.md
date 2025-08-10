@@ -2,6 +2,7 @@
 A responsive personal portfolio built by me to showcase my skills, projects, and contact details as a fresher frontend developer.
 
 Highlights
+
 -Fully responsive for desktop, tablet, and mobile
 -Modern, clean UI with smooth navigation
 -Projects section with GitHub & live demo links

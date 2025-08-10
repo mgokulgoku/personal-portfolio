@@ -3,11 +3,11 @@ A responsive personal portfolio built by me to showcase my skills, projects, and
 
 Highlights
 
--Fully responsive for desktop, tablet, and mobile
--Modern, clean UI with smooth navigation
--Projects section with GitHub & live demo links
--Integrated contact form (Web3Forms API)
--Downloadable resume option
+  -Fully responsive for desktop, tablet, and mobile.
+  -Modern, clean UI with smooth navigation.
+  -Projects section with GitHub & live demo links.
+  -Integrated contact form (Web3Forms API).
+  -Downloadable resume option.
 
 ## Tech Stack
 HTML5 | CSS3 | Font Awesome | Google Fonts

@@ -1,19 +1,23 @@
+/* Color variables for consistent theming */
 :root {
   --text-color: #1a1c20;
   --link-color: #4a76ee;
   --background-color: #eeeff1;
 }
 
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
 
+/* Main body styles */
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--text-color);
@@ -22,12 +26,13 @@ body {
   margin: 0 auto;
 }
 
+/* Default link styling */
 a {
   color: var(--link-color);
   text-decoration: none;
 }
 
-/* NAVBAR */
+/* NAVBAR STYLES */
 nav {
   display: flex;
   justify-content: space-between;
@@ -36,17 +41,20 @@ nav {
   height: 80px;
 }
 
+/* Logo/brand styling */
 nav .left p {
   color: var(--text-color);
   font-size: 22px;
   font-weight: 600;
 }
 
+/* Navigation links */
 nav .right a {
   color: var(--text-color);
   margin: 0 10px;
 }
 
+/* Special styling for last nav link (email) */
 nav .right a:last-child {
   color: var(--background-color);
   background-color: var(--text-color);
@@ -58,7 +66,7 @@ nav .right a span {
   margin-left: 5px;
 }
 
-/* SECTION 1: Hero */
+/* HERO SECTION */
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -69,18 +77,22 @@ nav .right a span {
   gap: 40px;
 }
 
+/* Text content takes more space */
 .hero-section .text {
   flex: 5;
 }
 
+/* Main heading */
 .hero-section .text h2 {
   font-size: 45px;
 }
 
+/* Action buttons container */
 .hero-section .text .links {
   margin-top: 25px;
 }
 
+/* Button styling */
 .hero-section .text .links a {
   display: inline-block;
   padding: 5px 10px;
@@ -91,44 +103,51 @@ nav .right a span {
   transition: .1s;
 }
 
+/* Button hover effect */
 .hero-section .text .links a:hover {
   color: var(--text-color);
   border: 2px solid var(--text-color);
 }
 
+/* Profile image container */
 .hero-section .headshot {
   flex: 2;
   display: flex;
   justify-content: right;
 }
 
+/* Profile image styling */
 .hero-section .headshot img {
   width: 350px;
   border-radius: 50%;
 }
 
-/* SECTION 2: Skills */
+/* SKILLS SECTION */
 .skills-section {
   padding: 0 50px;
   margin-bottom: 100px;
 }
 
+/* Section heading */
 .skills-section h2 {
   text-align: center;
   font-size: 35px;
 }
 
+/* Section description */
 .skills-section .text {
   text-align: center;
   margin-bottom: 20px;
 }
 
+/* Skills container */
 .skills-section .cells {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+/* Individual skill card */
 .skills-section .cells .cell {
   display: flex;
   justify-content: center;
@@ -142,6 +161,7 @@ nav .right a span {
   border-radius: 5px;
 }
 
+/* Skill icons */
 .skills-section .cells .cell img {
   width: 30px;
   height: 30px;
@@ -149,27 +169,31 @@ nav .right a span {
   border-radius: 2px;
 }
 
+/* Skill text */
 .skills-section .cells .cell span {
   font-size: 18px;
 }
 
-/* SECTION 3: Projects */
+/* PROJECTS SECTION */
 .projects-section {
   padding: 0 50px;
   margin-bottom: 100px;
 }
 
+/* Section heading */
 .projects-section h2 {
   text-align: center;
   font-size: 35px;
   margin-bottom: 30px;
 }
 
+/* Section description */
 .projects-section .text {
   text-align: center;
   margin-bottom: 40px;
 }
 
+/* Projects grid layout */
 .projects-section .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -178,6 +202,7 @@ nav .right a span {
   margin: 0 auto;
 }
 
+/* Individual project card */
 .projects-section .project-card {
   background: #fff;
   border-radius: 10px;
@@ -186,19 +211,25 @@ nav .right a span {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Card hover effect */
 .projects-section .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
+/* Project title */
 .projects-section .project-card h3 {
   font-size: 22px;
   margin-bottom: 15px;
   color: var(--text-color);
 }
+
+/* Project description */
 .projects-section .project-card p{
   margin-bottom: 30px;
 }
+
+/* Project preview images */
 .projects-section .project-card img {
   width: 300px;
   height: 150px;
@@ -207,6 +238,7 @@ nav .right a span {
   border-radius: 8px;
 }
 
+/* Technology tags container */
 .projects-section .project-card .tech-stack {
   display: flex;
   flex-wrap: wrap;
@@ -214,6 +246,7 @@ nav .right a span {
   margin-bottom: 25px;
 }
 
+/* Individual technology tags */
 .projects-section .project-card .tech-stack span {
   background: var(--link-color);
   color: white;
@@ -223,11 +256,13 @@ nav .right a span {
   font-weight: 500;
 }
 
+/* Button container */
 .projects-section .project-card .buttons {
   display: flex;
   gap: 10px;
 }
 
+/* Common button styles */
 .projects-section .project-card .buttons a {
   flex: 1;
   padding: 10px 15px;
@@ -241,6 +276,7 @@ nav .right a span {
   gap: 8px;
 }
 
+/* GitHub button styling */
 .projects-section .project-card .buttons .github-btn {
   background: transparent;
   border: 2px solid var(--text-color);
@@ -252,6 +288,7 @@ nav .right a span {
   color: white;
 }
 
+/* Live demo button styling */
 .projects-section .project-card .buttons .view-btn {
   background: var(--link-color);
   color: white;
@@ -263,32 +300,37 @@ nav .right a span {
   color: var(--link-color);
 }
 
-/* SECTION 4: Contact */
+/* CONTACT SECTION */
 .contact-section {
   padding: 0 50px;
   margin-bottom: 100px;
 }
 
+/* Section heading */
 .contact-section h2 {
   font-size: 35px;
 }
 
+/* Content layout */
 .contact-section .group {
   display: flex;
   gap: 50px;
 }
 
+/* Text content */
 .contact-section .group .text {
   flex: 3;
   margin-top: 20px;
 }
 
+/* Form styling */
 .contact-section .group form {
   flex: 3;
   display: flex;
   flex-direction: column;
 }
 
+/* Form inputs */
 .contact-section .group form input,
 .contact-section .group form textarea {
   font-family: 'Poppins', sans-serif;
@@ -300,6 +342,7 @@ nav .right a span {
   resize: none;
 }
 
+/* Submit button */
 .contact-section .group form button {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
@@ -315,7 +358,7 @@ nav .right a span {
   filter: brightness(.9);
 }
 
-/* FOOTER */
+/* FOOTER STYLES */
 .footer {
   background-color: var(--text-color);
   color: var(--background-color);
@@ -323,6 +366,7 @@ nav .right a span {
   margin-top: 50px;
 }
 
+/* Footer content layout */
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -333,6 +377,7 @@ nav .right a span {
   gap: 20px;
 }
 
+/* Left footer section */
 .footer-left {
   flex: 1;
 }
@@ -349,11 +394,13 @@ nav .right a span {
   line-height: 1.6;
 }
 
+/* Right footer section */
 .footer-right {
   flex: 1;
   text-align: right;
 }
 
+/* Social media links */
 .footer-social {
   display: flex;
   gap: 15px;
@@ -371,6 +418,7 @@ nav .right a span {
   color: var(--link-color);
 }
 
+/* Copyright section */
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
@@ -383,18 +431,16 @@ nav .right a span {
   font-size: 14px;
 }
 
-
+/* RESPONSIVE DESIGN - Tablet view */
 @media (max-width: 850px) {
-
-  /* SECTION 1: Hero */
   .hero-section .text h2 {
     font-size: 35px;
   }
 }
 
+/* RESPONSIVE DESIGN - Small tablet/large mobile */
 @media (max-width: 740px) {
-
-  /* SECTION 1: Hero */
+  /* Stack hero section vertically */
   .hero-section {
     flex-direction: column-reverse;
   }
@@ -403,18 +449,17 @@ nav .right a span {
     width: 300px;
   }
 
-  /* SECTION 3: Projects */
+  /* Single column for projects */
   .projects-section .projects-grid {
     grid-template-columns: 1fr;
   }
 
-
-  /* SECTION 4: Contact */
+  /* Stack contact section */
   .contact-section .group {
     flex-direction: column;
   }
 
-  /* SECTION 5: Footer */
+  /* Center footer content */
   .footer-content {
     flex-direction: column;
     text-align: center;
@@ -429,28 +474,31 @@ nav .right a span {
   }
 }
 
+/* RESPONSIVE DESIGN - Mobile view */
 @media (max-width: 600px) {
-
-  /* NAVBAR */
+  /* Reduce navbar padding */
   nav {
     padding: 0 20px;
   }
 
+  /* Larger nav icons on mobile */
   nav .right a {
     font-size: 22px;
   }
 
+  /* Remove button styling from email link */
   nav .right a:last-child {
     color: var(--text-color);
     background-color: transparent;
     padding: 0;
   }
 
+  /* Hide text labels on mobile */
   nav .right a span {
     display: none;
   }
 
-  /* SECTION 1: Hero */
+  /* Reduce hero section padding */
   .hero-section {
     padding: 0 20px;
   }
@@ -459,7 +507,7 @@ nav .right a span {
     font-size: 30px;
   }
 
-  /* SECTION 2: Skills */
+  /* Reduce skills section padding */
   .skills-section {
     padding: 0 20px;
   }
@@ -468,7 +516,7 @@ nav .right a span {
     font-size: 16px;
   }
 
-  /* SECTION 3: Projects */
+  /* Reduce projects section padding */
   .projects-section {
     padding: 0 20px;
   }
@@ -482,18 +530,85 @@ nav .right a span {
     padding: 20px;
   }
 
+  /* Stack project buttons vertically */
   .projects-section .project-card .buttons {
     flex-direction: column;
   }
 
-  /* SECTION 4: Contact */
+  /* Reduce contact section padding */
   .contact-section {
     padding: 0 20px;
   }
 
-  /* SECTION 5: Footer */
+  /* Reduce footer padding */
   .footer {
     padding: 30px 20px 20px;
   }
+}
 
+/* Very small mobile screens */
+@media (max-width: 380px) {
+  .projects-section {
+    padding: 0 10px; 
+  }
+
+  .projects-section .project-card {
+    padding: 12px;
+    margin: 0 5px;
+  }
+
+  .projects-section .project-card img {
+    height: 100px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .projects-section {
+    padding: 0 5px; 
+  }
+
+  .projects-section .projects-grid {
+    gap: 15px;
+    padding: 0 5px;
+  }
+
+  .projects-section .project-card {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .projects-section .project-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .projects-section .project-card p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .projects-section .project-card img {
+    height: 80px;
+    margin-bottom: 15px;
+  }
+
+  .projects-section .project-card .tech-stack {
+    margin-bottom: 15px;
+    gap: 5px;
+  }
+
+  .projects-section .project-card .tech-stack span {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .projects-section .project-card .buttons a {
+    padding: 6px 10px;
+    font-size: 13px;
+    gap: 5px;
+  }
 }

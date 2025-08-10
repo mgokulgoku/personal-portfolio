@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
+  <!-- Font Awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,13 +22,14 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
+  <!-- Navigation bar -->
   <nav>
     <div class="left">
-      <p>G|K</p>
+      <p>G|K</p> <!-- Logo/initials -->
     </div>
 
     <div class="right">
+      <!-- Social links -->
       <a href="https://github.com/mgokulgoku" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-github"></i>
         <span>Github</span>
@@ -45,7 +48,7 @@
   </nav>
 
   <main>
-    <!-- SECTION 1: Hero -->
+    <!-- Hero section with intro -->
     <section class="hero-section">
       <div class="text">
         <h2>Hi, I'm Gokulakrishnan 👋</h2>
@@ -54,8 +57,8 @@
           and React. Focused on creating responsive, user-friendly interfaces that deliver exceptional user experiences.
           Eager to contribute fresh perspectives and clean code to dynamic development teams!</p>
 
+        <!-- Action buttons -->
         <div class="links">
-
           <a href="assets/M_Gokulakrishnan_Resume.pdf" download="assets/M_Gokulakrishnan_Resume.pdf">
             <i class="fa-solid fa-download"></i>
             <span>Download CV</span>
@@ -75,16 +78,16 @@
             <i class="fa-solid fa-envelope"></i>
             <span>Contact</span>
           </a>
-
         </div>
       </div>
 
+      <!-- Profile image -->
       <div class="headshot">
         <img src="assets/images/hero-headshot.webp" alt="Gokul headshot">
       </div>
     </section>
 
-    <!-- SECTION 2: Skills -->
+    <!-- Skills showcase -->
     <section id="skills" class="skills-section">
       <h2>Skills</h2>
       <div class="text">
@@ -93,6 +96,7 @@
         web applications using vanilla JavaScript.
       </div>
 
+      <!-- Skills grid -->
       <div class="cells">
         <div class="cell">
           <img src="assets/images/html-logo.webp" alt="html logo">
@@ -108,18 +112,19 @@
           <img src="assets/images/javascript-logo.webp" alt="javascript logo">
           <span>JavaScript</span>
         </div>
-
       </div>
     </section>
 
-    <!-- SECTION 3: Projects -->
+    <!-- Projects portfolio -->
     <section id="projects" class="projects-section">
       <h2>Projects</h2>
       <div class="text">
         Here are some of my recent projects that showcase my skills in web development.
       </div>
 
+      <!-- Project cards container -->
       <div class="projects-grid">
+        <!-- Portfolio project -->
         <div class="project-card">
           <h3>Personal Portfolio</h3>
           <p>Personal portfolio website to showcase my frontend Skills and experience. Featuring clean design ,optimized performance and responsive across all devices and
@@ -141,6 +146,7 @@
           </div>
         </div>
 
+        <!-- Calculator project -->
         <div class="project-card">
           <h3>Web Calculator</h3>
           <center><img src="assets/images/calci.webp" alt="Calculator Image"></center>
@@ -161,6 +167,7 @@
           </div>
         </div>
 
+        <!-- Form validation project -->
         <div class="project-card">
           <h3>Form Validation</h3>
           <center><img src="assets/images/form.webp" alt="Form Image"></center>
@@ -181,6 +188,7 @@
           </div>
         </div>
 
+        <!-- Todo app project -->
         <div class="project-card">
           <h3>Todo List App</h3>
           <center><img src="assets/images/todoList.webp" alt="TodoList Image"></center>
@@ -201,6 +209,7 @@
           </div>
         </div>
 
+        <!-- Weather app project -->
         <div class="project-card">
           <h3>Weather App</h3>
           <center><img src="assets/images/weather.webp" alt="weatheApp Image"></center>
@@ -223,7 +232,7 @@
       </div>
     </section>
 
-    <!-- SECTION 4: Contact -->
+    <!-- Contact form section -->
     <section id="contact" class="contact-section">
       <h2>Contact</h2>
 
@@ -233,6 +242,7 @@
           entry-level opportunities where I can learn, grow, and make a positive impact.
         </div>
 
+        <!-- Contact form using web3forms -->
         <form action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="80375065-cdae-4d1b-be8e-c49c572aa0a6">
 
@@ -250,7 +260,8 @@
       </div>
     </section>
   </main>
-  <!-- FOOTER -->
+
+  <!-- Footer section -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-left">
@@ -260,6 +271,7 @@
       </div>
 
       <div class="footer-right">
+        <!-- Social media links -->
         <div class="footer-social">
           <a href="https://github.com/mgokulgoku" target="_blank" rel="noopener noreferrer" title="GitHub">
             <i class="fa-brands fa-github"></i>
@@ -275,11 +287,11 @@
       </div>
     </div>
 
+    <!-- Copyright info -->
     <div class="footer-bottom">
       <p>&copy; 2025 Gokulakrishnan. All rights reserved.</p>
     </div>
   </footer>
 </body>
-
 
 </html>

@@ -15,8 +15,18 @@
 /* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
+  animation: load 0.4s ease;
 }
 
+/* Site Load Animation */
+@keyframes load {
+    from{
+         opacity: 0;transform: translateY(-10px);
+    }
+    end{
+         opacity: 1;transform: translateY(0);
+    }
+}
 /* Main body styles */
 body {
   font-family: 'Poppins', sans-serif;
